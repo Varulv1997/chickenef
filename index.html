@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--html start-->
+
+<head>
+    <!--head start-->
+    <title>Chickenef</title>
+    <!--::::: support meta :::::::-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--::::: all css css :::::::-->
+    <link rel="stylesheet" href="assets\css\plugins\animate.min.css">
+    <link rel="stylesheet" href="assets\css\plugins\bootstrap.min.css">
+    <link rel="stylesheet" href="assets\css\plugins\fontawesome.css">
+    <link rel="stylesheet" href="assets\css\plugins\modal-video.min.css">
+    <link rel="stylesheet" href="assets\css\plugins\stellarnav.css">
+    <link rel="stylesheet" href="assets\css\plugins\owl.carousel.min.css">
+    <link rel="stylesheet" href="assets\css\custom_animation.css">
+    <link rel="stylesheet" href="assets\css\plugins-customized.css">
+    <link rel="stylesheet" href="assets\css\buttons-style.css">
+    <link rel="stylesheet" href="assets\css\inner.css">
+    <link rel="stylesheet" href="assets\css\theme.css">
+    <link rel="stylesheet" href="assets\css\typography.css">
+    <link rel="stylesheet" href="assets\css\responsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css" integrity="sha256-mM6GZq066j2vkC2ojeFbLCcjVzpsrzyMVUnRnEQ5lGw=" crossorigin="anonymous" />
+		<!-- LOAD JQUERY LIBRARY -->
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+			
+			<!-- LOADING FONTS AND ICONS -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+			
+			<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+			<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+			
+			<!-- REVOLUTION STYLE SHEETS -->
+			<link rel="stylesheet" type="text/css" href="css/rs6.css">
+			<!-- REVOLUTION LAYERS STYLES -->
+						<!-- REVOLUTION JS FILES -->
+			<script type="text/javascript" src="js/revolution.tools.min.js"></script>
+			<script type="text/javascript" src="js/rs6.min.js"></script>
+			
+			<script type="text/javascript">function setREVStartSize(e){			
+			try {								
+				var pw = document.getElementById(e.c).parentNode.offsetWidth,
+					newh;
+				pw = pw===0 || isNaN(pw) ? window.innerWidth : pw;
+				e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+				e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+				e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+				e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+				e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+				e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+				e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+				if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+					newh = Math.max(e.mh,window.innerHeight);				
+				else{					
+					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+					for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+					e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+					for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+										
+					var nl = new Array(e.rl.length),
+						ix = 0,						
+						sl;					
+					e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+					e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+					e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+					e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+					for (var i in e.rl) nl[i] = e.rl[i]<window.innerWidth ? 0 : e.rl[i];
+					sl = nl[0];									
+					for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+					var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+
+					newh =  (e.type==="carousel" && e.justify==="true" ? e.gh[ix] : (e.gh[ix] * m)) + (e.tabh + e.thumbh);
+				}			
+				
+				if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+				document.getElementById(e.c).height = newh;
+				window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+			} catch(e){
+				console.log("Failure at Presize of Slider:" + e)
+			}					   
+		  };</script>
+</head>
+<!--head end-->
+
+<body>
+    <!--body start-->
+    
+    <!--::::: site area start :::::::-->
+    <div class="site primary-bg">
+        <!--::::: header area start :::::::-->
+        <div class="header-area wow fadeInDown" id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-3 align-self-center d-none d-lg-block" style="padding-left: 56px;">
+                        <div class="header-socials">
+                            <ul>
+                                <li href="#"><a href="#">TR</a>
+                                </li>
+                                <li href="#"><a href="#">AR</a>
+                                </li>
+                                <li href="#"><a href="#">EN</a>
+                                </li>
+                               
+                                <li onclick="location.href='#JSECTION_1';" href="JSECTION_1" class="social-contact-text"><span>İnovasyon</span>
+                                </li>
+								 <li class="social-contact-text" style="
+    right: -357px;
+"><span href="#">Video</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-l2 col-sm-12 col-lg-12 col-xl-6 text-center align-self-center">
+                        <div class="logo-area active secondary-bg">
+                            <a href="index.html" class="logo">
+                                <img src="assets\img\logo\logo1.png" alt="">
+                            </a>
+                          
+                        </div>
+                    </div>
+				 
+                               
+                          
+                    <div class="col-lg-3 d-none d-lg-block align-self-center" style="
+    padding-right: 139px;     flex: 0 0 48%;
+    max-width: 16%;right:102px;"> <a href="#" class="cbtn btn22">Bayilik Başvuru Formu</a>
+                    </div>
+					<div class="col-lg-3 d-none d-lg-block align-self-center text-right" style="
+    padding-right: 56px;     flex: 0 0 19%;
+    max-width: 3%;right:82px;"> <a href="#footersFOOTER_1" class="cbtn btn2">İletişim</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--::::: header area end :::::::-->
+        
+		<!-- START Slider 1 REVOLUTION SLIDER 6.1.7 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_166_1_wrapper" data-alias="slider-1" data-source="gallery" style="background:rgb(12, 12, 14);padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+				<rs-module id="rev_slider_166_1" style="display:none;" data-version="6.1.7">
+					<rs-slides>
+						<rs-slide data-key="rs-436" data-title="Slide" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
+							<img src="assets/transparent.png" data-bg="c:#171717;" class="rev-slidebg" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-166-slide-436-layer-0" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:385px;y:29px;"
+								data-text="w:normal;"
+								data-dim="w:564px;h:765px;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:8;"
+							><img src="assets/burger2.jpg" width="564" height="765" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-166-slide-436-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:434px;y:80px;"
+								data-text="w:normal;"
+								data-dim="w:436px;h:369px;"
+								data-frame_999="o:0;st:w;"
+								data-loop_0="y:-10;"
+								data-loop_999="y:10;sp:6000;e:Sine.easeInOut;yym:t;"
+								style="z-index:9;"
+							><img src="assets/smoke.png" width="150" height="127" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-166-slide-436-layer-2" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:742px;y:196px;"
+								data-text="w:normal;"
+								data-dim="w:411px;h:566px;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:11;"
+							><img src="assets/cup.png" width="411" height="566" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-166-slide-436-layer-3" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:702px;y:465px;"
+								data-text="w:normal;"
+								data-dim="w:182px;h:132px;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:12;"
+							><img src="assets/Image-18.png" width="600" height="435" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-166-slide-436-layer-4" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:590px;y:409px;"
+								data-text="w:normal;"
+								data-dim="w:281px;h:253px;"
+								data-btrans="rX:-9;rZ:-20;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:10;"
+							><img src="assets/Image-20.png" width="1217" height="1096" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-166-slide-436-layer-6" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:143px;y:364px;"
+								data-text="w:normal;"
+								data-dim="w:455px;h:388px;"
+								data-frame_999="o:0;st:w;"
+								style="z-index:13;"
+							><img src="assets/http___pluspng.com_img-png_fries-hd-png-s3-amazonxaws-com-2560.png" width="2427" height="2069" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-166-slide-436-layer-7" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:304px;y:175px;"
+								data-text="w:normal;"
+								data-dim="w:195px;h:195px;"
+								data-frame_999="o:0;st:w;"
+								data-loop_999="sX:0.8;sY:0.8;sp:2000;e:Power0.easeInOut;yys:t;yyf:t;"
+								style="z-index:14;"
+							><img src="assets/drawing.png" width="833" height="833" data-no-retina> 
+							</rs-layer><!--
+-->						</rs-slide>
+					</rs-slides>
+					<rs-progress class="rs-bottom" style="visibility: hidden !important;"></rs-progress>
+				</rs-module>
+   <section id="JSECTION_1">
+	<!--Container-->
+
+	<div id="JDIV_2">
+		<!--row-->
+
+		<div id="JDIV_3">
+			<div id="JDIV_4">
+				<div id="JDIV_5">
+					<div id="JDIV_6">
+						<div id="JDIV_7">
+							<img src="http://mutationmedia.net/FOXERESTO/assets/svg/serving-dish.svg" alt="" id="JIMG_8" />
+							<h1 id="JH1_9">
+								İnovasyon
+							</h1>
+							<p style="font-family: Raleway;" id="JP_10">
+								Chickenef markası Fried Chicken alanında <a style="color:#E81928 !important;">inovasyon</a> sürecine girmiş, aşağıda sıralanan, ürün ve üretim
+yöntemlerindeki yenilik, iyileştirme ve geliştirmelerle, geleneksel yöntemlere göre her konuda farklı artılar
+oluşturarak ,rekabet gücünü artırmıştır.
+							</p> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="JDIV_12">
+				<div id="JDIV_13">
+					<img src="assets/img/about/about1.jpg" alt="Image" id="JIMG_14" />
+				</div>
+			</div>
+		</div>
+		<!--End row-->
+
+	</div>
+	<!--End container-->
+</section>
+<section id="SASECTION_1">
+	<div id="SADIV_2">
+	</div>
+	<div id="SADIV_3">
+		<div id="SADIV_4">
+			<!-- row -->
+
+			<div id="SADIV_5">
+				<div id="SADIV_6">
+				
+					<!-- section title -->
+
+					<div id="SADIV_10">
+						<div id="SADIV_11">
+							<h2 id="SAH2_12">
+								Ürün inovasyonu:
+							</h2>
+						</div>
+						<p style="font-family: Raleway;" id="SAP_13">
+							- Lezzet'in tavuk parçalarının içinde 'de oluşması.<br>
+<strong>-Az yağlı oluşu</strong><br>
+-sıcak muhafazada uzun süre dayanması<br>
+-Pişirme sırasında fire oranının düşük olması.<br>
+
+						</p> 
+					</div>
+					<!-- section title end -->
+
+				</div>
+			</div>
+		</div>
+		<!-- row end -->
+
+	</div>
+</section>
+<section id="clientsSECTION_1">
+	<div id="clientsDIV_2">
+		<div id="clientsDIV_3">
+			<div id="clientsDIV_4">
+				<div id="clientsDIV_5">
+					<h3 id="clientsH3_6">
+						Üretim inovasyonu:
+					</h3>
+				</div>
+			</div>
+		</div>
+		<div id="clientsDIV_7">
+			<div id="clientsDIV_8">
+				<div id="clientsDIV_9">
+					<div id="clientsDIV_10">
+						<div id="clientsDIV_11">
+							<div id="clientsDIV_12">
+								<div id="clientsDIV_13">
+									<p id="clientsP_14">
+										
+									</p>
+								</div>
+								
+							</div>
+							
+							<div id="clientsDIV_75">
+								<div id="clientsDIV_76">
+									<p id="clientsP_77">
+										
+									</p>
+								</div>
+								<div id="clientsDIV_78">
+									<div id="clientsDIV_79">
+									
+									</div>
+									<div id="clientsDIV_83">
+										<ul id="clientsUL_84">
+											<li id="clientsLI_85">
+												<i id="clientsI_86"></i>
+											</li>
+											<li id="clientsLI_87">
+												<i id="clientsI_88"></i>
+											</li>
+											<li id="clientsLI_89">
+												<i id="clientsI_90"></i>
+											</li>
+											<li id="clientsLI_91">
+												<i id="clientsI_92"></i>
+											</li>
+											<li id="clientsLI_93">
+												<i id="clientsI_94"></i>
+											</li>
+										</ul> 
+									</div>
+								</div>
+							</div>
+							<div id="clientsDIV_96">
+								<div id="clientsDIV_97">
+									<p id="clientsP_98">
+										<strong>-Yeni pişirme yöntemi.</strong><br>
+-kısa pişirme süresi.<br>
+-Pişirilecek ürünün marinede <strong>bekletme gerektirmemesi.</strong><br>
+-Karma pişirmenin ( but, kanat, gögüs, vb…)aynı anda yapılabilmesi.<br>
+-Farklı ağırlıklara sahip parçaların aynı anda pişirilebilmesi.<br>
+-Tek parçanın pişirilebilmesi.<br>
+-Kızartma yağı ömrünün uzun olması.<br>
+-Sisteme özel geliştirilen kaplama tozu.<br>
+<strong>-Üretim periyotları arasının kısa oluşu.</strong><br>
+-Toza bulama işleminin kolay oluşu.<br>
+-Üretim standartlarının elektronik otomasyona bağlı olması.<br>
+-Ekipman gereksinimindeki azlık.<br>
+-Üretim ve hizmet alanının olabildiğince küçük olabilmesi.<br>
+<strong>-Personel gereksiniminin az oluşu.</strong><br>
+Gerçekleştirilen inovasyonlar, <strong>yatırım maliyeti</strong> ve <strong>işletme sermayesinin azalmasına</strong>, birim maliyetlerin
+düşmesine ve ürün satış fiyatlarının düşürülebilmesine olanak sağlamaktadır. Eşsiz ürün'le birlikte
+oluşturulacak satış fiyat politikaları, müşteri talep artışına ve yatırımın <strong>kısa sürede geri dönüşüne
+(amortisman)</strong> neden olacaktır.<br>
+Amacımız, kendi ülkesinde fast food alanında yatırım yapmak isteyen, bizlerle aynı görüşleri paylaşacak, kişi
+veya kuruluşlar arasından, markanın istikrarlı büyümesine olanak sağlayabilecek en uygununu seçmek ve
+<strong>master franchise</strong> vermektir.
+									</p>
+								</div>
+								
+									<div id="clientsDIV_104">
+										<ul id="clientsUL_105">
+											<li id="clientsLI_106">
+												<i id="clientsI_107"></i>
+											</li>
+											<li id="clientsLI_108">
+												<i id="clientsI_109"></i>
+											</li>
+											<li id="clientsLI_110">
+												<i id="clientsI_111"></i>
+											</li>
+											<li id="clientsLI_112">
+												<i id="clientsI_113"></i>
+											</li>
+											<li id="clientsLI_114">
+												<i id="clientsI_115"></i>
+											</li>
+										</ul> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer id="footersFOOTER_1">
+	<div id="footersDIV_2">
+		<div id="footersDIV_3">
+			<div id="footersDIV_4">
+				<div id="footersDIV_5">
+					<img src="assets/img/logo/logo1.png" alt="logo" id="footersIMG_6" />
+				</div>
+				<div id="footersDIV_7">
+					<p id="footersP_8">
+						<i id="footersI_9"></i>Call Us: 0533 868 8699
+					</p>
+					<p id="footersP_10">
+						<i id="footersI_11"></i>franchise@chickenef.com
+					</p>
+					
+				</div>
+				
+			</div>
+			
+			<div id="footersDIV_14">
+				<div id="footersDIV_15">
+					<form id="footersFORM_16">
+						<p style="color:#fff !important;" id="footersP_17">
+							Contact Us
+						</p>
+						<div id="footersDIV_18">
+							<input type="email" id="footersINPUT_19" placeholder="Full Name" /> 
+							
+						</div>
+						<div style="
+    margin-top: 10px;
+" id="footersDIV_18">
+							<input type="email" id="footersINPUT_19" placeholder="Email" /> 
+						
+						</div>
+						<div style="
+    margin-top: 10px;
+" id="footersDIV_18">
+							<input type="email" id="footersINPUT_19" placeholder="Message" /> 
+							<button type="submit" id="footersBUTTON_20">
+								SUBMIT<i id="footersI_21"></i>
+							</button>
+						</div>
+					</form>
+				<div id="footersDIV_22">
+						<p id="footersP_23">
+							FOLLOW US:
+						</p>
+						<ul id="footersUL_24">
+							<li style="
+    margin-right: 11px;
+" id="footersLI_25">
+								<a href="#" id="footersA_26"><i class="fab fa-facebook"></i></a>
+							</li>
+							<li id="footersLI_28">
+								<a href="#" id="footersA_29"><i class="fab fa-twitter"></i></a>
+							</li>
+							
+							<li id="footersLI_34">
+								<a href="#" id="footersA_35"><i class="fab fa-youtube"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div id="footersDIV_37">
+		<div id="footersDIV_38">
+			<div id="footersDIV_39">
+				© 2020 Chickenef. All Rights Reserved. Designed & Developed by Anas E.
+			</div>
+		</div>
+	</div>
+</footer>
+    </div>
+	
+    <!--:::::site area end :::::::-->
+    <!--:::::ALL JS FILES :::::::-->
+	<script type="text/javascript">
+		if(typeof revslider_showDoubleJqueryError === "undefined") {
+			function revslider_showDoubleJqueryError(sliderID) {
+				var err = "<div class='rs_error_message_box'>";
+				err += "<div class='rs_error_message_oops'>Oops...</div>";
+				err += "<div class='rs_error_message_content'>";
+				err += "You have some jquery.js library include that comes after the Slider Revolution files js inclusion.<br>";
+				err += "To fix this, you can:<br>&nbsp;&nbsp;&nbsp; 1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on";
+				err += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jQuery.js inclusion and remove it";
+				err += "</div>";
+			err += "</div>";
+				jQuery(sliderID).show().html(err);
+			}
+		}
+		</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+				<script type="text/javascript">
+					
+					var	revapi166,
+						tpj;
+					jQuery(function() {
+						tpj = jQuery;
+						if(tpj("#rev_slider_166_1").revolution == undefined){
+							revslider_showDoubleJqueryError("#rev_slider_166_1");
+						}else{
+							revapi166 = tpj("#rev_slider_166_1").show().revolution({
+								jsFileLocation:"js/",
+								sliderLayout:"fullwidth",
+								visibilityLevels:"1240,1024,778,480",
+								gridwidth:1240,
+								gridheight:675,
+								spinner:"spinner0",
+								editorheight:"675,768,960,720",
+								responsiveLevels:"1240,1024,778,480",
+								disableProgressBar:"on",
+								navigation: {
+									onHoverStop:false
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+							});
+						}
+						
+					});
+				</script>
+    <script src="assets\js\plugins\bootstrap.min.js"></script>
+    <script src="assets\js\plugins\jquery.nav.js"></script>
+    <script src="assets\js\plugins\jquery.waypoints.min.js"></script>
+    <script src="assets\js\plugins\jquery-modal-video.min.js"></script>
+    <script src="assets\js\plugins\stellarnav.js"></script>
+    <script src="assets\js\plugins\popper.min.js"></script>
+    <script src="assets\js\plugins\owl.carousel.min.js"></script>
+    <script src="assets\js\plugins\wow.min.js"></script>
+    <script src="assets\js\plugins\gmap3.js"></script>
+    <script src="assets\js\plugins\jqueryUI.js"></script>
+    <script src="assets\js\main.js"></script>
+    <script src="assets\js\plugins-active.js"></script>
+</body>
+<!-- BODY END-->
+
+</html>
+<!-- HTML END-->
