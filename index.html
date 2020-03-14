@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <!--html start-->
 
@@ -25,23 +25,23 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css" integrity="sha256-mM6GZq066j2vkC2ojeFbLCcjVzpsrzyMVUnRnEQ5lGw=" crossorigin="anonymous" />
 		<!-- LOAD JQUERY LIBRARY -->
 			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-
+			
 			<!-- LOADING FONTS AND ICONS -->
 			<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
 
-
+			
 			<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
 			<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
+			
 			<!-- REVOLUTION STYLE SHEETS -->
 			<link rel="stylesheet" type="text/css" href="css/rs6.css">
 			<!-- REVOLUTION LAYERS STYLES -->
 						<!-- REVOLUTION JS FILES -->
 			<script type="text/javascript" src="js/revolution.tools.min.js"></script>
 			<script type="text/javascript" src="js/rs6.min.js"></script>
-
-			<script type="text/javascript">function setREVStartSize(e){
-			try {
+			
+			<script type="text/javascript">function setREVStartSize(e){			
+			try {								
 				var pw = document.getElementById(e.c).parentNode.offsetWidth,
 					newh;
 				pw = pw===0 || isNaN(pw) ? window.innerWidth : pw;
@@ -51,44 +51,44 @@
 				e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
 				e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
 				e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
-				e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
-				if(e.layout==="fullscreen" || e.l==="fullscreen")
-					newh = Math.max(e.mh,window.innerHeight);
-				else{
+				e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+				if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+					newh = Math.max(e.mh,window.innerHeight);				
+				else{					
 					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-					for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+					for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
 					e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
 					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
 					for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
-
+										
 					var nl = new Array(e.rl.length),
-						ix = 0,
-						sl;
+						ix = 0,						
+						sl;					
 					e.tabw = e.tabhide>=pw ? 0 : e.tabw;
 					e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
 					e.tabh = e.tabhide>=pw ? 0 : e.tabh;
-					e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+					e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
 					for (var i in e.rl) nl[i] = e.rl[i]<window.innerWidth ? 0 : e.rl[i];
-					sl = nl[0];
-					for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
-					var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+					sl = nl[0];									
+					for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+					var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
 
 					newh =  (e.type==="carousel" && e.justify==="true" ? e.gh[ix] : (e.gh[ix] * m)) + (e.tabh + e.thumbh);
-				}
-
-				if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));
+				}			
+				
+				if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
 				document.getElementById(e.c).height = newh;
-				window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";
+				window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
 			} catch(e){
 				console.log("Failure at Presize of Slider:" + e)
-			}
+			}					   
 		  };</script>
 </head>
 <!--head end-->
 
 <body>
     <!--body start-->
-
+    
     <!--::::: site area start :::::::-->
     <div class="site primary-bg">
         <!--::::: header area start :::::::-->
@@ -104,7 +104,7 @@
                                 </li>
                                 <li href="#"><a href="#">EN</a>
                                 </li>
-
+                               
                                 <li onclick="location.href='#JSECTION_1';" href="JSECTION_1" class="social-contact-text"><span>İnovasyon</span>
                                 </li>
 								 <li class="social-contact-text" style="
@@ -119,12 +119,12 @@
                             <a href="index.html" class="logo">
                                 <img src="assets\img\logo\logo1.png" alt="">
                             </a>
-
+                          
                         </div>
                     </div>
-
-
-
+				 
+                               
+                          
                     <div class="col-lg-3 d-none d-lg-block align-self-center" style="
     padding-right: 139px;     flex: 0 0 48%;
     max-width: 16%;right:102px;"> <a href="#" class="cbtn btn22">Bayilik Başvuru Formu</a>
@@ -137,16 +137,16 @@
             </div>
         </div>
         <!--::::: header area end :::::::-->
-
+        
 		<!-- START Slider 1 REVOLUTION SLIDER 6.1.7 --><p class="rs-p-wp-fix"></p>
 			<rs-module-wrap id="rev_slider_166_1_wrapper" data-alias="slider-1" data-source="gallery" style="background:rgb(12, 12, 14);padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-				<rs-module id="rev_slider_166_1" data-version="6.1.7">
+				<rs-module id="rev_slider_166_1" style="display:none;" data-version="6.1.7">
 					<rs-slides>
 						<rs-slide data-key="rs-436" data-title="Slide" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
 							<img src="assets/transparent.png" data-bg="c:#171717;" class="rev-slidebg" data-no-retina>
 <!--
 							--><rs-layer
-								id="slider-166-slide-436-layer-0"
+								id="slider-166-slide-436-layer-0" 
 								data-type="image"
 								data-rsp_ch="on"
 								data-xy="x:385px;y:29px;"
@@ -154,11 +154,11 @@
 								data-dim="w:564px;h:765px;"
 								data-frame_999="o:0;st:w;"
 								style="z-index:8;"
-							><img src="assets/burger2.jpg" width="564" height="765" data-no-retina>
+							><img src="assets/burger2.jpg" width="564" height="765" data-no-retina> 
 							</rs-layer><!--
 
 							--><rs-layer
-								id="slider-166-slide-436-layer-1"
+								id="slider-166-slide-436-layer-1" 
 								data-type="image"
 								data-rsp_ch="on"
 								data-xy="x:434px;y:80px;"
@@ -168,11 +168,11 @@
 								data-loop_0="y:-10;"
 								data-loop_999="y:10;sp:6000;e:Sine.easeInOut;yym:t;"
 								style="z-index:9;"
-							><img src="assets/smoke.png" width="150" height="127" data-no-retina>
+							><img src="assets/smoke.png" width="150" height="127" data-no-retina> 
 							</rs-layer><!--
 
 							--><rs-layer
-								id="slider-166-slide-436-layer-2"
+								id="slider-166-slide-436-layer-2" 
 								data-type="image"
 								data-rsp_ch="on"
 								data-xy="x:742px;y:196px;"
@@ -180,11 +180,11 @@
 								data-dim="w:411px;h:566px;"
 								data-frame_999="o:0;st:w;"
 								style="z-index:11;"
-							><img src="assets/cup.png" width="411" height="566" data-no-retina>
+							><img src="assets/cup.png" width="411" height="566" data-no-retina> 
 							</rs-layer><!--
 
 							--><rs-layer
-								id="slider-166-slide-436-layer-3"
+								id="slider-166-slide-436-layer-3" 
 								data-type="image"
 								data-rsp_ch="on"
 								data-xy="x:702px;y:465px;"
@@ -192,11 +192,11 @@
 								data-dim="w:182px;h:132px;"
 								data-frame_999="o:0;st:w;"
 								style="z-index:12;"
-							><img src="assets/Image-18.png" width="600" height="435" data-no-retina>
+							><img src="assets/Image-18.png" width="600" height="435" data-no-retina> 
 							</rs-layer><!--
 
 							--><rs-layer
-								id="slider-166-slide-436-layer-4"
+								id="slider-166-slide-436-layer-4" 
 								data-type="image"
 								data-rsp_ch="on"
 								data-xy="x:590px;y:409px;"
@@ -205,11 +205,11 @@
 								data-btrans="rX:-9;rZ:-20;"
 								data-frame_999="o:0;st:w;"
 								style="z-index:10;"
-							><img src="assets/Image-20.png" width="1217" height="1096" data-no-retina>
+							><img src="assets/Image-20.png" width="1217" height="1096" data-no-retina> 
 							</rs-layer><!--
 
 							--><rs-layer
-								id="slider-166-slide-436-layer-6"
+								id="slider-166-slide-436-layer-6" 
 								data-type="image"
 								data-rsp_ch="on"
 								data-xy="x:143px;y:364px;"
@@ -217,11 +217,11 @@
 								data-dim="w:455px;h:388px;"
 								data-frame_999="o:0;st:w;"
 								style="z-index:13;"
-							><img src="assets/http___pluspng.com_img-png_fries-hd-png-s3-amazonxaws-com-2560.png" width="2427" height="2069" data-no-retina>
+							><img src="assets/http___pluspng.com_img-png_fries-hd-png-s3-amazonxaws-com-2560.png" width="2427" height="2069" data-no-retina> 
 							</rs-layer><!--
 
 							--><rs-layer
-								id="slider-166-slide-436-layer-7"
+								id="slider-166-slide-436-layer-7" 
 								data-type="image"
 								data-rsp_ch="on"
 								data-xy="x:304px;y:175px;"
@@ -230,7 +230,7 @@
 								data-frame_999="o:0;st:w;"
 								data-loop_999="sX:0.8;sY:0.8;sp:2000;e:Power0.easeInOut;yys:t;yyf:t;"
 								style="z-index:14;"
-							><img src="assets/drawing.png" width="833" height="833" data-no-retina>
+							><img src="assets/drawing.png" width="833" height="833" data-no-retina> 
 							</rs-layer><!--
 -->						</rs-slide>
 					</rs-slides>
@@ -255,7 +255,7 @@
 								Chickenef markası Fried Chicken alanında <a style="color:#E81928 !important;">inovasyon</a> sürecine girmiş, aşağıda sıralanan, ürün ve üretim
 yöntemlerindeki yenilik, iyileştirme ve geliştirmelerle, geleneksel yöntemlere göre her konuda farklı artılar
 oluşturarak ,rekabet gücünü artırmıştır.
-							</p>
+							</p> 
 						</div>
 					</div>
 				</div>
@@ -280,7 +280,7 @@ oluşturarak ,rekabet gücünü artırmıştır.
 
 			<div id="SADIV_5">
 				<div id="SADIV_6">
-
+				
 					<!-- section title -->
 
 					<div id="SADIV_10">
@@ -295,7 +295,7 @@ oluşturarak ,rekabet gücünü artırmıştır.
 -sıcak muhafazada uzun süre dayanması<br>
 -Pişirme sırasında fire oranının düşük olması.<br>
 
-						</p>
+						</p> 
 					</div>
 					<!-- section title end -->
 
@@ -325,21 +325,21 @@ oluşturarak ,rekabet gücünü artırmıştır.
 							<div id="clientsDIV_12">
 								<div id="clientsDIV_13">
 									<p id="clientsP_14">
-
+										
 									</p>
 								</div>
-
+								
 							</div>
-
+							
 							<div id="clientsDIV_75">
 								<div id="clientsDIV_76">
 									<p id="clientsP_77">
-
+										
 									</p>
 								</div>
 								<div id="clientsDIV_78">
 									<div id="clientsDIV_79">
-
+									
 									</div>
 									<div id="clientsDIV_83">
 										<ul id="clientsUL_84">
@@ -358,7 +358,7 @@ oluşturarak ,rekabet gücünü artırmıştır.
 											<li id="clientsLI_93">
 												<i id="clientsI_94"></i>
 											</li>
-										</ul>
+										</ul> 
 									</div>
 								</div>
 							</div>
@@ -388,7 +388,7 @@ veya kuruluşlar arasından, markanın istikrarlı büyümesine olanak sağlayab
 <strong>master franchise</strong> vermektir.
 									</p>
 								</div>
-
+								
 									<div id="clientsDIV_104">
 										<ul id="clientsUL_105">
 											<li id="clientsLI_106">
@@ -406,7 +406,7 @@ veya kuruluşlar arasından, markanın istikrarlı büyümesine olanak sağlayab
 											<li id="clientsLI_114">
 												<i id="clientsI_115"></i>
 											</li>
-										</ul>
+										</ul> 
 									</div>
 								</div>
 							</div>
@@ -432,11 +432,11 @@ veya kuruluşlar arasından, markanın istikrarlı büyümesine olanak sağlayab
 					<p id="footersP_10">
 						<i id="footersI_11"></i>franchise@chickenef.com
 					</p>
-
+					
 				</div>
-
+				
 			</div>
-
+			
 			<div id="footersDIV_14">
 				<div id="footersDIV_15">
 					<form id="footersFORM_16">
@@ -444,19 +444,19 @@ veya kuruluşlar arasından, markanın istikrarlı büyümesine olanak sağlayab
 							Contact Us
 						</p>
 						<div id="footersDIV_18">
-							<input type="email" id="footersINPUT_19" placeholder="Full Name" />
-
+							<input type="email" id="footersINPUT_19" placeholder="Full Name" /> 
+							
 						</div>
 						<div style="
     margin-top: 10px;
 " id="footersDIV_18">
-							<input type="email" id="footersINPUT_19" placeholder="Email" />
-
+							<input type="email" id="footersINPUT_19" placeholder="Email" /> 
+						
 						</div>
 						<div style="
     margin-top: 10px;
 " id="footersDIV_18">
-							<input type="email" id="footersINPUT_19" placeholder="Message" />
+							<input type="email" id="footersINPUT_19" placeholder="Message" /> 
 							<button type="submit" id="footersBUTTON_20">
 								SUBMIT<i id="footersI_21"></i>
 							</button>
@@ -475,14 +475,14 @@ veya kuruluşlar arasından, markanın istikrarlı büyümesine olanak sağlayab
 							<li id="footersLI_28">
 								<a href="#" id="footersA_29"><i class="fab fa-twitter"></i></a>
 							</li>
-
+							
 							<li id="footersLI_34">
 								<a href="#" id="footersA_35"><i class="fab fa-youtube"></i></a>
 							</li>
 						</ul>
 					</div>
 				</div>
-
+				
 			</div>
 		</div>
 	</div>
@@ -495,7 +495,7 @@ veya kuruluşlar arasından, markanın istikrarlı büyümesine olanak sağlayab
 	</div>
 </footer>
     </div>
-
+	
     <!--:::::site area end :::::::-->
     <!--:::::ALL JS FILES :::::::-->
 	<script type="text/javascript">
@@ -517,7 +517,7 @@ veya kuruluşlar arasından, markanın istikrarlı büyümesine olanak sağlayab
 			<!-- END REVOLUTION SLIDER -->
 
 				<script type="text/javascript">
-
+					
 					var	revapi166,
 						tpj;
 					jQuery(function() {
@@ -543,7 +543,7 @@ veya kuruluşlar arasından, markanın istikrarlı büyümesine olanak sağlayab
 								},
 							});
 						}
-
+						
 					});
 				</script>
     <script src="assets\js\plugins\bootstrap.min.js"></script>
