@@ -8597,7 +8597,7 @@ span.circle-service {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-emphasis-color: rgb(137, 137, 137);
     -webkit-text-fill-color: rgb(137, 137, 137);
-	margin-top: 2350px;
+	margin-top: 0px;
     -webkit-text-stroke-color: rgb(137, 137, 137);
     transform-origin: 674.5px 199.5px;
     caret-color: rgb(137, 137, 137);
@@ -9076,7 +9076,7 @@ span.circle-service {
     color: rgb(137, 137, 137);
     font-family: Poppins, sans-serif;
     font-size: 14px;
-    height: 107px;
+    height: 50px;
     line-height: 20px;
     outline-color: rgb(137, 137, 137);
     text-align: center;
@@ -9190,8 +9190,8 @@ span.circle-service {
     display: inline-block;
     font-family: Poppins, sans-serif;
     font-size: 14px;
-    height: 107px;
-	width: 224px !important;
+    height: 47px;
+	width: 104px !important;
     line-height: 20px;
     max-width: 100%;
     outline-color: rgb(137, 137, 137);
