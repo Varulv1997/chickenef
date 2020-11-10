@@ -102,11 +102,11 @@
 }
 
 .stellarnav.light ul ul {
-    background:#242424;
+    background:#2a2731;
 }
 
 .stellarnav.light li a {
-    color: #F9C200;
+    color: #faae8a;
     font-size: 17px;
     font-weight: 400;
 }
@@ -164,7 +164,7 @@ li.current a,
 
 
 li.current li > a{
-    color: #F9C200 !important;
+    color: #faae8a !important;
 }
 .stellarnav li li.has-sub > a:after {
     margin-left: 10px;
@@ -737,7 +737,7 @@ li.current li > a{
 }
 .stellarnav.light.right.desktop li li a:hover{
     color: #fff;
-    background: #0B0C12;
+    background: #2a2731;
     padding-left: 20px;
     transition: all .3s;
 }
@@ -820,7 +820,7 @@ li.current li > a{
 }
 
 .side-menu .mobile-main-header .mobile-menu-toggler .mini-cart-wrap a:hover {
-    color: #DE2B36;
+    color: #da0037;
 }
 
 .side-menu .mobile-main-header .mobile-menu-toggler .mini-cart-wrap .notification {
@@ -835,7 +835,7 @@ li.current li > a{
     right: -8px;
     top: 0;
     position: absolute;
-    background-color: #DE2B36;
+    background-color: #da0037;
 }
 
 .side-menu .mobile-main-header .mobile-menu-toggler .mobile-menu-btn {
@@ -851,7 +851,7 @@ li.current li > a{
 }
 
 .side-menu .mobile-main-header .mobile-menu-toggler .mobile-menu-btn .off-canvas-btn:hover {
-    color: #DE2B36;
+    color: #da0037;
 }
 
 .side-menu .mobile-navigation {
@@ -888,7 +888,7 @@ li.current li > a{
 }
 
 .side-menu .mobile-menu li > a:hover {
-    color: #DE2B36;
+    color: #da0037;
 }
 
 .side-menu .mobile-menu li ul li {
@@ -966,7 +966,7 @@ li.current li > a{
 }
 
 .side-menu .off-canvas-contact-widget li {
-    color: #666666;
+    color: #2a2731;
     font-size: 15px;
     margin-bottom: 5px;
 }
@@ -976,11 +976,11 @@ li.current li > a{
 }
 
 .side-menu .off-canvas-contact-widget li a {
-    color: #666666;
+    color: #2a2731;
 }
 
 .side-menu .off-canvas-contact-widget li a:hover {
-    color: #DE2B36;
+    color: #da0037;
 }
 .side-menu .off-canvas-btn i {
     color: #222;
@@ -993,14 +993,14 @@ li.current li > a{
 }
 
 .side-menu .off-canvas-social-widget a {
-    color: #666666;
+    color: #2a2731;
     font-size: 18px;
     display: inline-block;
     margin-right: 15px;
 }
 
 .side-menu .off-canvas-social-widget a:hover {
-    color: #DE2B36;
+    color: #da0037;
 }
 
 /*------ offcanvas widget area end ------*/

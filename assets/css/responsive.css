@@ -39,11 +39,11 @@ Description:
 @media only screen and (max-width: 991px){
     .stellarnav.mobile {
     position: static;
-    background: #F9C200;
+    background: #faae8a;
     margin: 0 15px;
 }
 .stellarnav.mobile.light a {
-    color: #0B0C12;
+    color: #2a2731;
 }
 .close-btn {
     position: absolute;

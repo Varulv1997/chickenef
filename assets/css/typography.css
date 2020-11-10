@@ -38,14 +38,14 @@
 }
 
 a {
-    color: #3e425c;
+    color: #2a2731;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     display: inline-block;
 }
 
 a:hover {
-    color: #2095f3;
+    color: #2a2731;
 }
 
 a:focus,
@@ -129,7 +129,7 @@ h3{
 
 h6{
     font-size: 18px;
-    color: #0B0C12;
+    color: #2a2731;
     line-height: 22px;
 }
 
@@ -141,14 +141,14 @@ h4{
 body {
     font-size: 17px;
     line-height: 30px;
-    color: #0B0C12;
+    color: #2a2731;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
 }
 
 
-/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+/* Remove Chrome Input Field's Unwanted #faae8a Background Color */
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus,
@@ -2249,7 +2249,7 @@ input:-webkit-autofill:hover {
     left: 0;
     top: 0;
     opacity: .4;
-    background: #0B0C12;
+    background: #2a2731;
     z-index: -1;
 }
 
@@ -2258,7 +2258,7 @@ input:-webkit-autofill:hover {
 }
 
 .footer-bg{
-background: #242424;
+background: #2a2731;
 }
 /*-----------------------
     COLOR CSS
@@ -2272,15 +2272,15 @@ background: #242424;
 .black h5,
 .black h6,
 .black small,
-.red,
-.red a,
-.red h1,
-.red h2,
-.red h3,
-.red h4,
-.red h5,
-.red h6,
-.red small,
+.#faae8a,
+.#faae8a a,
+.#faae8a h1,
+.#faae8a h2,
+.#faae8a h3,
+.#faae8a h4,
+.#faae8a h5,
+.#faae8a h6,
+.#faae8a small,
 .white,
 .white a,
 .white h1,

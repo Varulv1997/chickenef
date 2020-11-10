@@ -15,7 +15,7 @@
 .load-wrapp {
     width: 100%;
     height: 105%;
-    background: #0B0C12;
+    background: #2a2731;
     position: absolute;
     z-index: 99999999999;
     justify-content: center;
@@ -36,7 +36,7 @@
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    background-color: #4b9cdb;
+    background-color: #2a2731;
 }
 
 .ring-1 {
@@ -44,7 +44,7 @@
     height: 10px;
     margin: 0 auto;
     padding: 10px;
-    border: 7px dashed #4b9cdb;
+    border: 7px dashed #2a2731;
     border-radius: 100%;
 }
 
@@ -53,7 +53,7 @@
     width: 45px;
     height: 45px;
     margin: 0 auto;
-    border: 4px solid #4b9cdb;
+    border: 4px solid #2a2731;
     border-radius: 100%;
 }
 
@@ -72,7 +72,7 @@
     width: 16px;
     height: 16px;
     border-radius: 100%;
-    background: #4282B3;
+    background: #2a2731;
 }
 
 .letter-holder {padding: 16px;}
@@ -87,7 +87,7 @@
     width: 12px;
     height: 12px;
     border-radius: 4px;
-    background-color: #4b9cdb;
+    background-color: #2a2731;
 }
 
 .spinner {
@@ -104,7 +104,7 @@
     width: 25px;
     height: 25px;
     border-radius: 100%;
-    background-color: #4b9cdb;
+    background-color: #2a2731;
 }
 
 .bubble-2 {
@@ -117,7 +117,7 @@
     width: 15px;
     height: 6px;
     border-radius: 2px;
-    background-color: #4b9cdb;
+    background-color: #2a2731;
 }
 
 /* =Animate the stuff
@@ -226,7 +226,7 @@
   
   50% {
       transform: translate(80px,0);
-      background-color: #f5634a;
+      background-color: #faae8a;
       width: 25px;
   }
 }

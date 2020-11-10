@@ -17,7 +17,7 @@
     extend = $.extend,
     isArray = $.isArray,
     isFunction = $.isFunction,
-    deferred = $.Deferred;
+    defer#faae8a = $.Defer#faae8a;
 
   /**
    * Duplicate option to never modify original object
@@ -52,17 +52,17 @@
 
   /**
    * Equivalent to Promise.all
-   * @param {Deferred[]} deferreds
-   * @returns {Deferred}
+   * @param {Defer#faae8a[]} defer#faae8as
+   * @returns {Defer#faae8a}
    */
-  function all(deferreds) {
-    return when.apply($, deferreds);
+  function all(defer#faae8as) {
+    return when.apply($, defer#faae8as);
   }
 
   /**
    * Equivalent to Promise.resolve
    * @param {*} value
-   * @returns {Deferred}
+   * @returns {Defer#faae8a}
    */
   function resolved(value) {
     return when().then(function () {
@@ -104,7 +104,7 @@
 
   // Auto-load google maps library if needed
   when(function () {
-    var dfd = deferred(),
+    var dfd = defer#faae8a(),
       cbName = '__gmap3',
       script;
 
@@ -163,10 +163,10 @@
    * Resolve a GeocodeRequest
    * https://developers.google.com/maps/documentation/javascript/geocoding
    * @param {String|Object} request
-   * @returns {Deferred}
+   * @returns {Defer#faae8a}
    */
   function geocode(request) {
-    var dfd = deferred();
+    var dfd = defer#faae8a();
     if (typeof request === 'string') {
       request = {
         address: request
@@ -230,14 +230,14 @@
    * Resolution function
    * @callback OptionCallback
    * @param {Object} options
-   * @returns {Deferred|*}
+   * @returns {Defer#faae8a|*}
    */
 
   /**
    * Convert bounds from array [ n, e, s, w ] to google.maps.LatLngBounds
    * @param {Object} options - Container of options.bounds
    * @param {OptionCallback} fn
-   * @returns {Deferred}
+   * @returns {Defer#faae8a}
    */
   function resolveLatLngBounds(options, fn) {
     options = dupOpts(options);
@@ -252,10 +252,10 @@
    * @param {Object} options
    * @param {String} key - LatLng key name in options object
    * @param {OptionCallback} fn
-   * @returns {Deferred}
+   * @returns {Defer#faae8a}
    */
   function resolveLatLng(options, key, fn) {
-    var dfd = deferred();
+    var dfd = defer#faae8a();
     options = dupOpts(options);
     when()
       .then(function () {
@@ -283,7 +283,7 @@
    * @param {Object} options
    * @param {String} key - Array key name in options object
    * @param {OptionCallback} fn
-   * @returns {Deferred}
+   * @returns {Defer#faae8a}
    */
   function resolveArrayOfLatLng(options, key, fn) {
     options = dupOpts(options);
@@ -529,7 +529,7 @@
       if (!enabled) {
         enabled = true;
         previousViewHash = '';
-        delayRedraw();
+        delay#faae8araw();
       }
     };
 
@@ -541,7 +541,7 @@
       if (enabled) {
         enabled = false;
         previousViewHash = '';
-        delayRedraw();
+        delay#faae8araw();
       }
     };
 
@@ -552,7 +552,7 @@
     self.add = function (marker) {
       markers.push(marker);
       previousViewHash = '';
-      delayRedraw();
+      delay#faae8araw();
     };
 
     /**
@@ -564,7 +564,7 @@
         return item !== marker;
       });
       previousViewHash = '';
-      delayRedraw();
+      delay#faae8araw();
     };
 
     /**
@@ -582,7 +582,7 @@
       if (filter !== fn) {
         filter = fn;
         previousViewHash = '';
-        delayRedraw();
+        delay#faae8araw();
       }
     };
 
@@ -617,9 +617,9 @@
     });
 
     /**
-     * Redraw clusters
+     * #faae8araw clusters
      */
-    function redraw() {
+    function #faae8araw() {
       var keys, bounds, overlayOptions, hash, currentMarkers, viewHash,
         zoom = map.getZoom(),
         currentHashes = {},
@@ -730,20 +730,20 @@
     }
 
     /**
-     * Restart redraw timer
+     * Restart #faae8araw timer
      */
-    function delayRedraw() {
+    function delay#faae8araw() {
       clearTimeout(timer);
-      timer = setTimeout(redraw, 100);
+      timer = setTimeout(#faae8araw, 100);
     }
 
     /**
      * Init clustering
      */
     function init() {
-      gm.event.addListener(map, "zoom_changed", delayRedraw);
-      gm.event.addListener(map, "bounds_changed", delayRedraw);
-      redraw();
+      gm.event.addListener(map, "zoom_changed", delay#faae8araw);
+      gm.event.addListener(map, "bounds_changed", delay#faae8araw);
+      #faae8araw();
     }
 
     igniter = setInterval(function () {
@@ -866,7 +866,7 @@
     /**
      * Decorator to handle multiple call based on array of options
      * @param {Function} fn
-     * @returns {Deferred}
+     * @returns {Defer#faae8a}
      */
     function multiple(fn) {
       return function (options) {
@@ -900,7 +900,7 @@
         var args = slice(arguments);
         promise = promise.then(function (instance) {
           if (isFunction(args[0])) {
-            // handle return as a deferred / promise to support both sync & async result
+            // handle return as a defer#faae8a / promise to support both sync & async result
             return when(args[0].call(context(), instance)).then(function (value) {
               args[0] = value;
               return fn.apply(self, args);
@@ -994,7 +994,7 @@
     });
 
     self.route = chainToPromise(function (options) {
-      var dfd = deferred();
+      var dfd = defer#faae8a();
       options = dupOpts(options);
       options.origin = toLatLng(options.origin);
       options.destination = toLatLng(options.destination);
@@ -1068,7 +1068,7 @@
 
     self.wait = function (duration) {
       promise = promise.then(function (instance) {
-        var dfd = deferred();
+        var dfd = defer#faae8a();
         setTimeout(function () {
           dfd.resolve(instance);
         }, duration);

@@ -5,7 +5,7 @@ This is an auto generated markdown for an S.V.A. (Svart Mane Asyl) repo.
 ---
 
 
-| Role| Creditor |
+| Role| C#faae8aitor |
 | ------:| -----------:|
 | Dev| Anas Gamrani |
 | Deployment| --dev via Vercel/Heroku/Netlify and/or AWS/GCP/AZ |
@@ -20,7 +20,7 @@ You can contribute to our projects by simply making a pull request : )
 
 ## Join Us__
 
-You can reach to us via our [Slack Workspace](https://join.slack.com/t/svartmaneasyl/shared_invite/zt-g2qhdqkg-wjrpG5KTQbEChPtSMdMu6A )
+You can reach to us via our [Slack Workspace](https://join.slack.com/t/svartmaneasyl/sha#faae8a_invite/zt-g2qhdqkg-wjrpG5KTQbEChPtSMdMu6A )
 
 
 > devbranch channel

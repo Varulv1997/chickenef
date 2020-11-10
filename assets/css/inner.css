@@ -8,7 +8,7 @@
 }
 .blog-grid-area .single-blog-img span {
 
-    background: #F9C200;
+    background: #faae8a;
 }
 .single_blog_text {
     color: #fff;
@@ -46,7 +46,7 @@
 
 .details-card h3 {
     font-size: 28px;
-    color: #0B0C12;
+    color: #2a2731;
     text-transform: uppercase;
     font-weight: 500;
     position: relative;
@@ -57,7 +57,7 @@
     content: "";
     height: 100%;
     width: 10px;
-    background: #F9C200;
+    background: #faae8a;
     left: -30px;
     top: 0;
 }
@@ -76,7 +76,7 @@
     display: block;
     font-size: 18px;
     font-weight: 500;
-    color: #0B0C12;
+    color: #2a2731;
     line-height: 1.4;
 }
 
@@ -195,7 +195,7 @@
     height: 100%;
     width: 100%;
     opacity: .5;
-    background: linear-gradient(to bottom, transparent ,#3C3C3C);
+    background: linear-gradient(to bottom, transparent ,#2a2731);
     left: 0;
     top: 0;
     z-index: 2;
@@ -243,7 +243,7 @@
 }
 .team-back-text a:hover {
     
-    color: #F9C200
+    color: #faae8a
   
 }
 
@@ -255,13 +255,13 @@
 }
 .team_front h5 {
     font-size: 20px;
-    color: #2F3035;
+    color: #2a2731;
     margin: 20px 0;
 }
 
 .team_front h5 span {
     display: block;
-    color: #48494D;
+    color: #2a2731;
     font-size: 17px;
     font-weight: 300;
     margin-top: 5px;
@@ -282,7 +282,7 @@ a.team_back p {
 
 
 .teams-carousel .owl-nav div {
-    background: #F9C200;
+    background: #faae8a;
     width: 80px;
     height: 80px;
     text-align: center;
@@ -293,7 +293,7 @@ a.team_back p {
     top: 45%;
     margin-top: -40px;
     left: 32%;
-    border: 8px solid #0B0C12;
+    border: 8px solid #2a2731;
     transition: all .3s;
     opacity: 0;
     visibility: hidden;
@@ -313,24 +313,24 @@ a.team_back p {
 }
 
 .teams-carousel .owl-nav div i {
-    color: #0B0C12;
+    color: #2a2731;
     font-size: 28px;
 }
 
 .teams-carousel .owl-nav div:hover{
-    border-color:#F9C200;
-    background: #0B0C12;
+    border-color:#faae8a;
+    background: #2a2731;
     transition: all .3s;
     
 }
 
 .teams-carousel .owl-nav div:hover i{
-    color: #F9C200;
+    color: #faae8a;
     transition: all .3s;
 }
 .teams-carousel .single-blog-img span {
 
-    background: #F9C200;
+    background: #faae8a;
 }
 
 
@@ -339,7 +339,7 @@ a.team_back p {
 /*single blog area css*/
 
 .single-blog-article-area .owl-nav div {
-    background: #F9C200;
+    background: #faae8a;
     width: 80px;
     height: 80px;
     text-align: center;
@@ -350,7 +350,7 @@ a.team_back p {
     top: 45%;
     margin-top: -40px;
     left: -40px;
-    border: 8px solid #0B0C12;
+    border: 8px solid #2a2731;
     transition: all .3s;
     opacity: 0;
     visibility: hidden;
@@ -370,24 +370,24 @@ a.team_back p {
 }
 
 .single-blog-article-area .owl-nav div i {
-    color: #0B0C12;
+    color: #2a2731;
     font-size: 28px;
 }
 
 .single-blog-article-area .owl-nav div:hover{
-    border-color:#F9C200;
-    background: #0B0C12;
+    border-color:#faae8a;
+    background: #2a2731;
     transition: all .3s;
     
 }
 
 .single-blog-article-area .owl-nav div:hover i{
-    color: #F9C200;
+    color: #faae8a;
     transition: all .3s;
 }
 .single-blog-article-area .single-blog-img span {
 
-    background: #F9C200;
+    background: #faae8a;
 }
 
 .single_blog_mid_single_carousel {
@@ -413,7 +413,7 @@ a.team_back p {
     text-align: center;
     line-height: 60px;
     padding: 0;
-    background: #242424;
+    background: #2a2731;
     border: navajowhite;
     margin: 0 5px;
     border-radius: 5px;
@@ -423,8 +423,8 @@ a.team_back p {
 }
 
 .cpagination a.page-link:hover {
-    background: #F9C200;
-    color: #0B0C12;
+    background: #faae8a;
+    color: #2a2731;
 }
 
 .cpagination a.page-link img {
@@ -438,7 +438,7 @@ a.team_back p {
 .single_comment h5 a {
     float: right;
     font-size: 17px;
-    color: #F9C200;
+    color: #faae8a;
     text-transform: capitalize;
 }
 
@@ -451,7 +451,7 @@ a.team_back p {
     position: relative;
     z-index: 2;
     padding-left: 80px;
-    border-bottom: 1px solid #24252A;
+    border-bottom: 1px solid #2a2731;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
